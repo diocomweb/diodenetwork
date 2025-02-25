@@ -3,5 +3,6 @@ description: "A privacy-first communication solution"
 baseurl: "/" 
 url: "https://diodenetwork.io" 
 theme: minima   
+favicon: "/assets/images/favicon.ico"
 
 markdown: kramdown
