@@ -10,7 +10,7 @@
       </div>
       <svg ref="svg"  @mouseleave="hideTooltip"       @mousedown="startDrag($event)"
            @mousemove="onDrag($event)"
-           @mouseup="endDrag" @touchstart="startDragTouch($event)"
+           @mouseup="endDrag" 
           @touchstart="startTouch($event)" @touchmove="onTouchMove($event)" @touchend="endTouch"
 
            version="1.1"
@@ -564,6 +564,8 @@
        
 
       </svg>
+               <a href="#technology-section" class="scroll-down-arrow-map">
+          <img src="/diodenetwork-dev-2025/assets/images/icons/arrow_back_black.svg" alt="Back arrow" />                </a>
           <g transform="translate(50, 550)" id="labels" class="map-title-total" >
           <text class="map-info-title" dominant-baseline="middle" y="-40" x="-10" ref="num_nodes">Total nodes: {{total_nodes}}</text>   
             <div class="row-node" style="margin-top: 1rem;" >
@@ -574,9 +576,10 @@
         <div class="circle-black"></div>
         <text class="map-info">Not connected nodes</text>
     </div>
-  
+   
         </g>
     </div>
+  
     <div class="tooltip vue-tooltip-theme" id="map-tooltip"></div>
     <div class="page-content"></div>
   </div>
@@ -619,7 +622,7 @@ export default {
   mounted: function () {
  
      if (this.checkIfMobile()) {
-      this.scale = 6; 
+      this.scale = 3; 
     }
    
   },
